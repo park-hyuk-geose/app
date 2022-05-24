@@ -6,9 +6,8 @@ import PostView from "../PostView/PostView"
 
 const HomeView = () =>
   <SafeAreaView>
-    {/* <ClassListView />
-    <SchoolBabView /> */}
-    <PostView />
+    <ClassListView />
+    <SchoolBabView />
   </SafeAreaView>
 
 export default HomeView
