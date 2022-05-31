@@ -5,9 +5,10 @@ import SchoolBabView from "../SchoolBabView/SchoolBabView"
 import PostView from "../PostView/PostView"
 
 const HomeView = () =>
-  <SafeAreaView>
-    <ClassListView />
-    <SchoolBabView />
-  </SafeAreaView>
+  // <SafeAreaView>
+  //   <ClassListView />
+  //   <SchoolBabView />
+  // </SafeAreaView>
+  <PostView />
 
 export default HomeView

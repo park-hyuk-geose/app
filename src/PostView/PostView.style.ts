@@ -3,10 +3,13 @@ import {StyleProp, ImageStyle, ViewStyle, TextStyle} from "react-native"
 const style = {
   post: <StyleProp<ViewStyle>>{
     backgroundColor: 'white',
-    paddingHorizontal: 5,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#b0b0b0',
   },
   userinfo: <StyleProp<ViewStyle>>{
-    marginVertical: 10,
+    paddingVertical: 10,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -17,10 +20,20 @@ const style = {
     borderRadius: 35 / 2,
   },
   username: <StyleProp<TextStyle>>{
-    marginHorizontal: 10,
+    paddingHorizontal: 10,
   },
-    usertext: <StyleProp<TextStyle>>{
+  text: <StyleProp<TextStyle>>{
     marginVertical: 10,
+  },
+  imgview: <StyleProp<ViewStyle>> {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 20,
+  },
+  img: <StyleProp<ImageStyle>>{
+    width: 230,
+    height: 300
   },
   useract: <StyleProp<ViewStyle>>{
     marginVertical: 10,
@@ -28,6 +41,14 @@ const style = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent : 'space-between',
+  },
+  acticon: <StyleProp<ViewStyle>>{
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent : 'center',
+    height: 'auto',
+    width: 70,
   },
   
 }
