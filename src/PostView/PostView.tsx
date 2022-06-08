@@ -1,23 +1,31 @@
 import { Image, View, Text } from "react-native"
 import Container from "../Container/Container"
-import 똥 from "../../assets/박똥.png"
 import style from './PostView.style'
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 import { faThumbsUp, faComment, faBookmark, faCommentAlt } from "@fortawesome/free-solid-svg-icons"
+import userDefaultImg from "../../assets/user.png"
 
-const PostView = () =>
+interface Props {
+  userImg: string;
+  userName: string;
+  img: string;
+  text: string;
+};
+
+const PostView = ({ userImg, userName, img, text }: Props) =>
   <View style={style.post}>
     <View>
       <View style={style.userinfo}>
         <Image 
           style={style.userimg}
-          source={똥} />
-        <Text style={style.username}>박민혁</Text>
+          source={userImg} />
+        <Text style={style.username}>{userName}</Text>
       </View>
-      <Text style={style.text}>나는 바보</Text>
+      <Text style={style.text}>{text}</Text>
+      {img?
       <View style={style.imgview}>
-        <Image style={style.img} source={똥} />
-      </View>
+        <Image style={style.img} source={img} />
+      </View>:null}
       <View style={style.useract}>
         <View style={style.acticon}>
           <FontAwesomeIcon icon={faThumbsUp}/>
@@ -34,5 +42,11 @@ const PostView = () =>
       </View>
     </View>
   </View>
+
+PostView.defaultProps = {
+  userImg: userDefaultImg,
+  img: false,
+  text: null,
+}
 export default PostView
 
