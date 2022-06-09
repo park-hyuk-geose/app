@@ -11,16 +11,14 @@ const SchoolBabView = () =>
        <View style={style.items}>
         <View style={style.labels}>
           <Text style={style.label}>아침</Text>
-          <Text style={style.kcal}>730 KCal</Text>
+          <Text>730 KCal</Text>
         </View>
         <Text>
-{`
- *후랑크소시지볶음밥 (1.2.5.6.10.13.15.)
+{`*후랑크소시지볶음밥 (1.2.5.6.10.13.15.)
 초코머핀 (1.2.5.6.13.)
 달걀파국 (1.13.)
 배추김치 (9.13.)
-당근&사과(아연)주스 (12.)
-`}
+당근&사과(아연)주스 (12.)`}
         </Text>
         <View style={style.date}>
           <Text>
@@ -31,7 +29,7 @@ const SchoolBabView = () =>
        <View style={style.items}>
         <View style={style.labels}>
           <Text style={style.label}>점심</Text>
-          <Text style={style.kcal}>990 KCal</Text>
+          <Text>990 KCal</Text>
         </View>
         <Text>
 {`유부초밥(점보)1 (1.2.5.6.10.13.15.16.)
@@ -49,8 +47,8 @@ const SchoolBabView = () =>
       </View>
       <View style={style.items}>
         <View style={style.labels}>
-          <Text style={style.label}>저 녁</Text>
-          <Text style={style.kcal}>990 KCal</Text>
+          <Text style={style.label}>저녁</Text>
+          <Text>990 KCal</Text>
         </View>
         <Text>
 {`유부초밥(점보)1 (1.2.5.6.10.13.15.16.)

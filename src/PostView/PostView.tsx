@@ -1,5 +1,4 @@
 import { Image, View, Text } from "react-native"
-import Container from "../Container/Container"
 import style from './PostView.style'
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 import { faThumbsUp, faComment, faBookmark, faCommentAlt } from "@fortawesome/free-solid-svg-icons"
