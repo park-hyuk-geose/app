@@ -22,11 +22,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-native": "0.68.2",
-<<<<<<< HEAD
     "react-native-calendars": "^1.1284.0",
-=======
     "react-native-bouncy-checkbox": "^2.1.10",
->>>>>>> c536eec (feat: c)
     "react-native-hr": "^1.1.4",
     "react-native-hr-component": "^2.0.3",
     "react-native-pager-view": "^5.4.24",
