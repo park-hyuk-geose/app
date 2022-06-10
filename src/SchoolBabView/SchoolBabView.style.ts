@@ -1,6 +1,9 @@
-import {StyleProp, TextStyle, ViewStyle} from "react-native"
+import {StyleProp, TextStyle, ViewStyle, ScrollView} from "react-native"
 
 const style = {
+  scroll: <StyleProp<ViewStyle>>{
+    
+  },
   container: <StyleProp<ViewStyle>> {
     display: 'flex',
     flexDirection: 'row',
