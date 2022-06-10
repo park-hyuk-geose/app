@@ -1,7 +1,7 @@
 import {NavigationContainer} from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import ClassPage from "./src/ClassPage/ClassPage"
 import HomeView from "./src/HomeView/HomeView"
-import PostsPage from "./src/PostsPage/PostsPage"
 
 const Stack = createNativeStackNavigator()
 
@@ -15,7 +15,7 @@ const App = () =>
       <Stack.Screen
         name="Class"
         options={{ headerTitle: "경소고 소프트웨어개발과 1반" }}
-        component={PostsPage} />
+        component={ClassPage} />
     </Stack.Navigator>
   </NavigationContainer>
 
