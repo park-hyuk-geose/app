@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "위드스쿨",
-    "slug": "위드스쿨",
+    "slug": "with-school",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

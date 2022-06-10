@@ -8,7 +8,7 @@ const SchoolBabView = () =>
   <Container>
     <Link to="SchooBobs" label="오늘 밥"/>
     <View style={style.container}>
-      <ScrollView horizontal style={style.scroll}>
+      <ScrollView horizontal>
         <View style={style.items}>
           <View style={style.labels}>
             <Text style={style.label}>아침</Text>

@@ -1,8 +1,8 @@
 import {StyleProp, TextStyle, ViewStyle, ScrollView} from "react-native"
 
 const style = {
-  scroll: <StyleProp<ViewStyle>>{
-    
+  homecontainer: <StyleProp<ViewStyle>>{
+    backgroundColor: "#fff",
   },
   container: <StyleProp<ViewStyle>> {
     display: 'flex',

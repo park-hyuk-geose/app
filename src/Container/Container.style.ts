@@ -5,7 +5,8 @@ const style = {
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderBottomWidth: 1,
-    borderBottomColor: '#b0b0b0'
+    borderBottomColor: '#b0b0b0',
+    backgroundColor: 'white',
   }
 }
 
