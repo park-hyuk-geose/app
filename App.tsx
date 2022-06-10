@@ -10,7 +10,7 @@ const App = () =>
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="Home"
-        options={{ headerTitle: "우리학교" }}
+        options={{ headerShown: false }}
         component={HomeView} />
       <Stack.Screen
         name="Class"

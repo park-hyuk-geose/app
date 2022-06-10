@@ -1,6 +1,7 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import ClassNotiPage from '../ClassNotiPage/ClassNotiPage';
 import ClassNotiView from '../ClassNotiView/ClassNotiView';
+import HomeworkPage from '../HomeworkPage/HomeworkPage';
 import PostsPage from '../PostsPage/PostsPage';
 import CalendarPage from '../CalendarPage/CalendarPage';
 
@@ -18,7 +19,7 @@ const ClassPage = () =>
         options={{ title: "알림장" }}/>
         <Tab.Screen
         name="b"
-        component={PostsPage}
+        component={HomeworkPage}
         options={{ title: "과제" }}/>
       <Tab.Screen
         name="c"
