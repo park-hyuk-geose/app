@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import AccountPage from "./src/AccountPage/AccoutPage"
 import ArchivePage from "./src/ArchivePage/ArchivePage"
 import ClassPage from "./src/ClassPage/ClassPage"
+import CreatePostView from "./src/CreatePostView/CreatePostView"
 import HomeView from "./src/HomeView/HomeView"
 import MyPage from "./src/MyPage/MyPage"
 
@@ -31,6 +32,10 @@ const App = () =>
         name="archive"
         options={{ headerTitle: '보관' }}
         component={ArchivePage} />
+      <Stack.Screen
+        name="createpost"
+        options={{ headerTitle: '글쓰기' }}
+        component={CreatePostView} />
     </Stack.Navigator>
   </NavigationContainer>
 
