@@ -13,7 +13,9 @@ const ClassListItem = () => {
     <View style={{ marginHorizontal: 10 }}> 
       <Pressable onPress={onPress}>
         <View style={style.view}>
-          <Image source={SchoolLogo} style={style.image} />
+          <View style={style.img}>
+            <Image source={SchoolLogo} style={style.image} />
+          </View>
           <Text style={style.text}>경소고 소프트웨어개발과 1반</Text>
         </View>
       </Pressable>

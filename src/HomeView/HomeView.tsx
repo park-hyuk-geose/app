@@ -1,5 +1,5 @@
 import React from "react"
-import { Image, Pressable, SafeAreaView, Text, View} from "react-native"
+import { Image, Pressable, SafeAreaView, ScrollView, Text, View} from "react-native"
 import ClassListView from "../ClassListView/ClassListView"
 import SchoolBabView from "../SchoolBabView/SchoolBabView"
 import CalendarView from "../CalendarView/CalendarView"
@@ -8,7 +8,7 @@ import Link from "../Link/Link"
 import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome"
 import {faUser} from "@fortawesome/free-solid-svg-icons"
 import {useNavigation} from "@react-navigation/native"
-import style from './HomeView.style.ts'
+import style from "./HomeView.style"
 
 const HomeView = () => {
   const navigation = useNavigation<any>()
@@ -25,9 +25,13 @@ const HomeView = () => {
           source={userDefaultImg} />
       </Pressable>
     </View>
-    <ClassListView />
-    <CalendarView />
-    <SchoolBabView />
+    <ScrollView>
+      <View style={style.main}>
+        <ClassListView />
+        <CalendarView />
+        <SchoolBabView />
+      </View>
+    </ScrollView>
   </SafeAreaView>
   // <ScrollView>
   //   <ClassNavigationView />
