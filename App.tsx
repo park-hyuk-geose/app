@@ -7,6 +7,7 @@ import ClassPage from "./src/ClassPage/ClassPage"
 import CreatePostView from "./src/CreatePostView/CreatePostView"
 import HomeView from "./src/HomeView/HomeView"
 import MyPage from "./src/MyPage/MyPage"
+import PostOverView from "./src/PostOverView/PostOverView"
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +40,11 @@ const App = () => {
             name="createpost"
             options={{ headerTitle: '글쓰기' }}
             component={CreatePostView} />
+          
+          <Stack.Screen
+            name="overview"
+            options={{ headerTitle: "경소고 소프트웨어개발과 1반" }}
+            component={PostOverView} />
         </Stack.Navigator>
       </NavigationContainer>
     </View>

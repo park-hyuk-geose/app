@@ -5,6 +5,7 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 import Container from "../Container/Container"
 import Link from "../Link/Link"
 import moment from 'moment'
+import style from './CalendarPageView.style'
 
 const data = [
   {
@@ -53,8 +54,8 @@ const CalendarPageView = () => {
       />
       <Container>
         {new Array(7).fill(0).map((_, i) => (
-          <View>
-            <Text>{moment(before3days).add(i, 'days').format('YYYY-MM-DD')}</Text>
+          <View style={style.container}>
+            <Text style={style.date}>{moment(before3days).add(i, 'days').format('YYYY-MM-DD')}</Text>
             {data.filter((v) => v.date === moment(before3days).add(i, 'days').format('YYYY-MM-DD')).map((v) => (
               <View>
                 {v.homeworks.map((v) => (

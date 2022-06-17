@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 import {useNavigation} from "@react-navigation/native";
 import {Pressable} from "react-native";
 import {SafeAreaView} from "react-native";
-import ClassNotiView from "../ClassNotiView/ClassNotiView";
+import PostView from "../PostView/PostView";
 import style from '../PostsPage/PostsPage.style'
 
 const ClassNotiPage = () => {
@@ -13,8 +13,8 @@ const ClassNotiPage = () => {
 
   return (
   <SafeAreaView style={style.body}>
-    <ClassNotiView userName="양윤직" tag="담임공지" text="AAAA"  />
-    <ClassNotiView  userName="이은심" tag="학교공지" text="BBBBB" />
+    <PostView userName="양윤직" tag="담임공지" text="AAAA" teacher={true}  />
+    <PostView  userName="이은심" tag="학교공지" text="BBBBB" teacher={true} />
 
     <Pressable style={style.floatbtn} onPress={onPress('createpost')}>
       <FontAwesomeIcon size={30} color="#333" icon={faFilePen}/>

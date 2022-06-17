@@ -6,7 +6,7 @@ import style from './SchoolBabView.style'
 
 const SchoolBabView = () =>
   <Container>
-    <Link to="SchooBobs" label="오늘 밥"/>
+     <Text>오늘 밥</Text>
     <View style={style.container}>
       <ScrollView horizontal>
         <View style={style.items}>

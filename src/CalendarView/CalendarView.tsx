@@ -6,30 +6,30 @@ import style from './CalendarView.style'
 
 const CalendarView = () =>
   <Container>
-    <Link to="Calendars" label="오늘 일정"/>
+    <Text>오늘 일정</Text>
       <ScrollView horizontal style={style.container}>
        <View style={style.items}>
         <View style={style.labels}>
-        <Text>24일 (월)</Text>
+        <Text>17일 (금)</Text>
         </View>
         <Text>
-        등록된 일정이 없어요
+        문화앱 프로젝트 최종
         </Text>
       </View>
          <View style={style.items}>
         <View style={style.labels}>
-        <Text>24일 (월)</Text>
+        <Text>18일 (토)</Text>
         </View>
         <Text>
-        등록된 일정이 없어요
+        등록된 일정이 없습니다
         </Text>
       </View>
        <View style={style.items}>
         <View style={style.labels}>
-        <Text>24일 (월)</Text>
+        <Text>19일 (일)</Text>
         </View>
         <Text>
-        등록된 일정이 없어요
+        등록된 일정이 없습니다.
         </Text>
       </View>
    </ScrollView>
