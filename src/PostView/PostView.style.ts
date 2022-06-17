@@ -4,6 +4,10 @@ const style = {
   chattingPost: <StyleProp<ViewStyle>>{
     backgroundColor: 'white',
     height:"100%",
+    flexGrow: 0,
+  },
+  chattingPostNull: {
+    flexGrow: 0,
   },
   post: <StyleProp<ViewStyle>>{
     backgroundColor: 'white',
@@ -11,18 +15,21 @@ const style = {
     paddingVertical: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#b0b0b0',
+    flexGrow: 0,
   },
   userinfo: <StyleProp<ViewStyle>>{
     paddingVertical: 10,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    flexGrow: 0,
   },
   userflex: <StyleProp<ViewStyle>>{
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    flexGrow: 0,
   },
   userimg: <StyleProp<ImageStyle>>{
     width: 35,

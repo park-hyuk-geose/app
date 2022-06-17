@@ -32,7 +32,7 @@ const PostView = ({ userImg, userName, img, text, tag, teacher, homeworks, chat,
   }
 
   return (
-    <ScrollView style={chatting&&style.chattingPost}>
+    <ScrollView style={chatting?style.chattingPost:style.chattingPostNull}>
       <View style={style.post} >
         <View>
           <View style={style.userinfo}>
