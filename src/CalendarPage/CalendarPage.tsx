@@ -1,24 +1,19 @@
 import { useState } from 'react';
 import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
-import {Text, View} from "react-native"
+import {Text, View, ScrollView} from "react-native"
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 import Container from "../Container/Container"
 import Link from "../Link/Link"
+import CalendarPageView from '../CalendarPageView/CalendarPageView';
 
-const CalendarView = () => {
- var [date, setDate] = useState('');
+const CalendarPage = () => {
   return(
-    <Container>
-      <Calendar
-        onDayPress={day => {
-          setDate(day.dateString);
-        }}
-        markedDates={{ [date] : {selected: true, selectedColor: 'blue'},}}
-        
-      />
-    </Container>
+    <ScrollView>
+      <CalendarPageView />
+    </ScrollView>
   )
 }
 
   
 
-export default CalendarView
+export default CalendarPage
